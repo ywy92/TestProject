@@ -6,16 +6,24 @@
 그래서 master branch와 다른 branch들의 스냅샷을 어떻게 하면 다르게 잘     
 관리할 수 있을까?
 
-# 테스트 방법 1
+# 테스트 방법 1(실패...)
 1. 테스트에 사용할 java project를 생성
 2. 패키지 두 개를 생성 후 목적 없는 파일을 생성
-3. master branch에 push requst -> merge
+3. master branch에 push request -> merge
 4. master branch를 기준으로 test1 branch 생성
 5. test1 branch에서 두 개의 패키지 중 한 개의 패키지를    
-   삭제 후 push requst -> merge
-6. test1 branch에서 master branch에 pull requst -> merge
+   삭제 후 push request -> merge
+6. test1 branch에서 master branch에 pull request -> merge
 7. 결과를 확인한다.
 
-
+# 테스트 방법 2
+1. 다시 master 패키지를 생성
+2. master branch에 push request -> merge
+3. master branch를 기준으로 test2 branch 생성
+4. test2 branch에서 패키지를 생성 후 push request -> merge
+6. test2 branch에서 master branch에 pull request -> merge
+7. test1 branch에서 test1 패키지 외 제거 후 master branch    
+   pull request -> merge
+8. 결과를 확인한다.
 
 
