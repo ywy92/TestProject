@@ -26,10 +26,17 @@
    pull request -> merge
 8. 결과를 확인한다.
 
-# 테스트 방법 3
+# 테스트 방법 3(실패)
 1. test2 branch에서 파일 추가 push request -> merge
 2. test2 branch에서 master branch에 pull request -> merge
 3. test1 branch에서 master branch를 pull
 4. test1 workingTree에 test2 branch가 추가한 파일이 pull
 5. 결과를 확인한다.
+6. test1 branch에서 master, test2 package 제거 후    
+   master branch에 pr merge하면 master branch에 반영됨
+
+# 테스트 방법 4
+1. 브랜치 단위가 아닌 협업(다른계정) 상황으로 범위를 넓임
+2. ywy92계정과 ywyi1992계정 협업
+3. 내일... 해야겠다...
 
