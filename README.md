@@ -16,7 +16,7 @@
 6. test1 branch에서 master branch에 pull request -> merge
 7. 결과를 확인한다.
 
-# 테스트 방법 2
+# 테스트 방법 2(성공)
 1. 다시 master 패키지를 생성
 2. master branch에 push request -> merge
 3. master branch를 기준으로 test2 branch 생성
@@ -26,4 +26,10 @@
    pull request -> merge
 8. 결과를 확인한다.
 
+# 테스트 방법 3
+1. test2 branch에서 파일 추가 push request -> merge
+2. test2 branch에서 master branch에 pull request -> merge
+3. test1 branch에서 master branch를 pull
+4. test1 workingTree에 test2 branch가 추가한 파일이 pull
+5. 결과를 확인한다.
 
